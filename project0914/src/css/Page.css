@@ -1,0 +1,68 @@
+.login {
+  margin: 40px;
+  text-align: center;
+}
+
+.login input {
+  margin: 15px;
+  width: 400px;
+  height: 50px;
+}
+
+.login button {
+  margin: 20px;
+  width: 400px;
+  height: 80px;
+}
+
+.home .carouselZone {
+  margin-top: 20px;
+  height: 500px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .carouselZone .carousel {
+  height: 400px;
+  width: 80%;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.home .bestText {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.home .bestZone {
+  height: 500px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .bestZone li {
+  color: white;
+  text-align: center;
+  list-style: none;
+  border: 2px solid white;
+  width: 300px;
+  height: 300px;
+}
+/*# sourceMappingURL=Page.css.map */
