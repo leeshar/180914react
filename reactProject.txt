@@ -1,0 +1,21 @@
+*Component 분리
+	- Header
+	- Nav
+	- Aside <= Design
+	- Section
+	- Footer
+*dependency
+	- React-DOM
+	- React-Router-DOM
+	- Redux
+	- Redux-form
+*Route
+	- Header -> Route -> Section View
+	- Nav -> Route -> Section View
+	- “/“ -> Section View (HOME)
+*Folder Controll
+	- src /client
+	- src /pages
+	- src /components
+	- src /css
+	- src /img
