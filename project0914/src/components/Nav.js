@@ -5,8 +5,9 @@ export default class Nav extends Component{
   
     render(){
         const activeStyle = {
-            border: '2px solid white',
-            padding: '10px'
+            borderBottom:'3px solid white',
+            padding: '20px',
+            padding: '0px 40px 6px 40px'
         }
         return(
             
