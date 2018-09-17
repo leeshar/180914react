@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {NavLink} from 'react-router-dom';
+import {LinkTo} from '@storybook/addon-links';
 
 export default class Nav extends Component{
 
@@ -11,9 +11,9 @@ export default class Nav extends Component{
         return(
             <div className="nav">
                 <ul className="nav-bar">
-                    <li><NavLink exact to="/" activeStyle={activeStyle}>홈</NavLink></li>
-                    <li><NavLink to="/about" activeStyle={activeStyle}>공지사항</NavLink></li>
-                    <li><NavLink to="/event" activeStyle={activeStyle}>이벤트</NavLink></li>
+                    <li>홈</li>
+                    <li>공지사항</li>
+                    <li>이벤트</li>
                     <li>메뉴</li>
                 </ul>
             </div>
