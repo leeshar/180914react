@@ -15,7 +15,7 @@ export default class AdminNav extends Component{
         return(
             <div className="adminNav">
             <ul className="aside">
-            <li class="adminli">ADMIN</li>
+            <li class="adminli">관리자</li>
             <li><NavLink to="/">홈</NavLink></li>
             <li>관리</li>
             <li onClick={(e) => this.handleChange(1)}><a>회원관리<span><img src={Arrow}/></span></a></li>

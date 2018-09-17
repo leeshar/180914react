@@ -5,19 +5,20 @@
 
 .header {
   font-size: 1rem;
-  height: 150px;
+  height: 60px;
   overflow: hidden;
-  background-color: #4b69ad;
+  background-color: #833fcc;
 }
 
 .header img {
   position: absolute;
-  padding: 10px;
+  padding: 15px;
+  left: 20px;
 }
 
 .header .header-bar {
   list-style: none;
-  background-color: #4b69ad;
+  background-color: #833fcc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +43,7 @@
 }
 
 .nav .nav-bar {
-  background-color: black;
+  background-color: #833fcc;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,13 +62,15 @@
   color: white;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .adminNav {
   width: 250px;
   height: 800px;
   display: inline-block;
-  padding: 5px;
-  border: 2px solid #535353;
-  background-color: #535353;
+  background-color: #2b2831;
   overflow: scroll;
   float: left;
 }
@@ -83,18 +86,18 @@
 
 .adminNav .aside li {
   padding: 15px;
-  border: 1px solid white;
+  background-color: #62538c;
 }
 
 .adminNav .aside ul li {
-  background-color: green;
+  background-color: #453571;
   list-style: circle;
 }
 
 .adminNav .aside .adminli {
-  color: #787878;
-  background-color: white;
-  border: none;
+  color: black;
+  background-color: #e6e6ff;
+  border: 2px solid black;
   text-align: center;
 }
 

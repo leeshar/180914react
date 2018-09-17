@@ -5,16 +5,17 @@
 
 .header{
     font-size: 1rem;
-    height: 150px;
+    height: 60px;
     overflow: hidden;
-    background-color:  #4b69ad;
+    background-color: #833fcc;
         img{
             position: absolute;
-            padding: 10px;
+            padding: 15px;
+            left: 20px;
         }
         .header-bar{
             list-style: none;
-            background-color: #4b69ad;
+            background-color:#833fcc;
             display: flex;
             justify-content: flex-end;
                 li{
@@ -31,7 +32,7 @@
     font-size: 1rem;
     overflow: hidden;
         .nav-bar{
-            background-color: black;
+            background-color: #833fcc;
             list-style: none;
             display: flex;
             justify-content: space-around;
@@ -45,13 +46,14 @@
                 }
         }
 }
+::-webkit-scrollbar{
+    display: none;
+}
 .adminNav{
     width: 250px;
     height: 800px;
     display: inline-block;
-    padding: 5px;
-    border: 2px solid #535353;
-    background-color: #535353;
+    background-color: #2b2831;
     overflow: scroll;
     float: left;
         .aside{
@@ -62,19 +64,21 @@
                 }
                 li{
                     padding: 15px;
-                    border: 1px solid white;
+                    background-color: #62538c;
+                    
                 }
                 ul{
                     li{
-                        background-color: green;
+                        background-color: #453571;
                         list-style: circle;
                     }
                 }
                 .adminli{
-                    color: 	#787878;
-                    background-color: white;
-                    border: none;
+                    color: 	black;
+                    background-color: #e6e6ff;
+                    border: 2px solid black;
                     text-align: center;
+                    
                 }
                 span{
                     float: right;
