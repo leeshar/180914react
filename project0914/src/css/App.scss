@@ -2,14 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
 .header{
     font-size: 1rem;
     height: 150px;
     overflow: hidden;
-    background-color: red;
+    background-color:  #4b69ad;
+        img{
+            position: absolute;
+            padding: 10px;
+        }
         .header-bar{
             list-style: none;
-            background-color: black;
+            background-color: #4b69ad;
             display: flex;
             justify-content: flex-end;
                 li{
@@ -21,28 +26,58 @@
                     color:white;
                 }
         }
-}
+    }
 .nav{
     font-size: 1rem;
     overflow: hidden;
-    .nav-bar{
-        background-color: black;
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-            li{
-                padding: 15px;
-                color: white;
-            }
-            a{
-                text-decoration: none;
-                color: white;
-            }
-    }
+        .nav-bar{
+            background-color: black;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+                li{
+                    padding: 15px;
+                    color: white;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+        }
+}
+.adminNav{
+    width: 250px;
+    height: 800px;
+    display: inline-block;
+    background-color: #535353;
+    float: left;
+}
+.aside{
+    list-style: none;
+    color: white;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li{
+            padding: 20px;
+            border: 1px solid white;
+        }
+        .adminli{
+            color: 	#787878;
+            background-color: white;
+            border: none;
+            text-align: center;
+        }
+        span{
+            float: right;
+        }
 }
 .section{
         min-height: 800px;
         margin: 0 auto -155px;
+        font-size: 1rem;
+        overflow: hidden;
 }
 .footer, .push{
     display: flex;

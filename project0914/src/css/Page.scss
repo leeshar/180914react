@@ -16,7 +16,6 @@
       .carouselZone{
         margin-top: 20px;
         height: 500px;
-        background-color: red;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,4 +47,9 @@
             height: 300px;
           }
       }
+  }
+  .admin{
+    display: inline-block;
+    min-width: 200px;
+    padding: 50px;
   }
