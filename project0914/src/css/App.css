@@ -5,20 +5,22 @@
 
 .header {
   font-size: 1rem;
-  height: 60px;
+  height: 80px;
   overflow: hidden;
-  background-color: #833fcc;
+  background-color: white;
 }
 
 .header img {
+  width: 150px;
+  height: 50px;
+  left: 50px;
+  top: 15px;
   position: absolute;
-  padding: 15px;
-  left: 20px;
 }
 
 .header .header-bar {
   list-style: none;
-  background-color: #833fcc;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,13 +30,13 @@
 }
 
 .header .header-bar li {
-  color: white;
+  color: black;
   padding: 15px;
 }
 
 .header .header-bar a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .nav {
@@ -67,8 +69,10 @@
 }
 
 .adminNav {
-  width: 250px;
-  height: 800px;
+  margin-top: 65px;
+  width: 20%;
+  min-width: 200px;
+  height: 100%;
   display: inline-block;
   background-color: #2b2831;
   overflow: scroll;
@@ -115,19 +119,48 @@
   font-size: 1rem;
 }
 
+.wrapAdminSec {
+  min-height: 800px;
+  min-width: 650px;
+  float: left;
+  width: 78%;
+  overflow-y: scroll;
+}
+
+.adminSec {
+  float: left;
+  width: 90%;
+  padding: 20px;
+}
+
+.footer {
+  border-top: 1px solid black;
+}
+
 .footer, .push {
+  float: left;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 155px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
 }
 
 .footer .footer-p, .push .footer-p {
-  margin-top: 40px;
+  margin-right: 10%;
+}
+
+.footer .footer-p h2, .push .footer-p h2 {
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 .footer .sns-bar, .push .sns-bar {
-  margin-left: 200px;
+  margin-right: 10%;
   padding: 15px;
 }
 

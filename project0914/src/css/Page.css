@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Do+Hyeon");
 .login {
   margin: 40px;
   text-align: center;
@@ -66,7 +67,188 @@
 }
 
 #admin {
+  margin-left: 50px;
+  width: 100%;
+}
+
+#admin .title {
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+
+#admin .admin_sec01 {
+  list-style-type: none;
+  width: 100%;
+  min-width: 640px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+#admin .admin_sec01 li {
+  margin-top: 50px;
+  border: 1px solid #e5e5e5;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   float: left;
-  padding: 50px;
+  padding: 30px;
+}
+
+#admin .admin_sec01 li .icon {
+  width: 62px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#admin .admin_sec01 li .sec_title {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+#admin .admin_sec01 li .sec_num {
+  font-size: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 18px;
+  float: right;
+}
+
+#admin .admin_sec02 {
+  margin-top: 50px;
+  width: 100%;
+  height: 250px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+#admin .admin_sec02 .sec_box {
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  grid-gap: 1rem;
+}
+
+#admin .admin_sec02 .sec_title {
+  margin-left: 12px;
+  width: 80%;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 5px 10px 10px;
+}
+
+#admin .admin_sec02 ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+#admin .admin_sec02 ul li {
+  padding: 10px;
+}
+
+#admin .admin_sec02 ul li .sec_count {
+  display: inline-block;
+  float: right;
+}
+
+#admin .admin_sec02 ul li .sec_count span {
+  border-radius: 100%;
+  padding: 5px 9px 5px 9px;
+  margin-right: 5px;
+  background-color: #4b69ad;
+  color: white;
+}
+
+#admin .admin_sec03 {
+  width: 100%;
+  height: 450px;
+  margin-top: 70px;
+}
+
+#admin .admin_sec03 .sec_box01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  width: 100%;
+  list-style-type: none;
+}
+
+#admin .admin_sec03 .sec_box01 .sec_box {
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  height: 120px;
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#admin .admin_sec03 .sec_box01 .sec_box li {
+  font-size: 1rem;
+}
+
+#admin .admin_sec03 .sec_box01 .sec_box h2 {
+  font-size: 3rem;
+  color: #4b69ad;
+}
+
+#admin .admin_sec03 .sec_box01 .sec_box h2 span {
+  color: black;
+  padding-left: 20px;
+}
+
+#admin .admin_sec03 .sec_box02 {
+  border: 1px solid #e5e5e5;
+  height: 150px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#admin .admin_sec03 .sec_box02 img {
+  width: 100%;
+  height: 100%;
+}
+
+#admin .admin_sec04 {
+  width: 100%;
+  height: 300px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 4rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#admin .admin_sec04 .sec_box {
+  border: 2px solid #e5e5e5;
+  width: 100%;
+}
+
+#admin .admin_sec04 .sec_box h2 {
+  padding: 5px 10px 5px 5px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+#admin .admin_sec04 .sec_box h2 span {
+  float: right;
+  font-size: 1rem;
+}
+
+#admin .admin_sec04 .sec_box li {
+  font-size: 1.5rem;
+  list-style-type: none;
+  padding: 5px;
+  color: #535353;
+}
+
+#admin .admin_sec04 .sec_box li span {
+  float: right;
 }
 /*# sourceMappingURL=Page.css.map */

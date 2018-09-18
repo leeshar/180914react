@@ -2,29 +2,30 @@
     margin: 0;
     padding: 0;
 }
-
 .header{
     font-size: 1rem;
-    height: 60px;
+    height: 80px;
     overflow: hidden;
-    background-color: #833fcc;
+    background-color: white;
         img{
+            width: 150px;
+            height: 50px;
+            left: 50px;
+            top: 15px;
             position: absolute;
-            padding: 15px;
-            left: 20px;
         }
         .header-bar{
             list-style: none;
-            background-color:#833fcc;
+            background-color:white;
             display: flex;
             justify-content: flex-end;
                 li{
-                    color: white;
+                    color: black;
                     padding: 15px;
                 }
                 a{
                     text-decoration: none;
-                    color:white;
+                    color:black;
                 }
         }
     }
@@ -50,8 +51,10 @@
     display: none;
 }
 .adminNav{
-    width: 250px;
-    height: 800px;
+    margin-top: 65px;
+    width: 20%;
+    min-width: 200px;
+    height: 100%;
     display: inline-block;
     background-color: #2b2831;
     overflow: scroll;
@@ -96,14 +99,38 @@
         margin: 0 auto -155px;
         font-size: 1rem;
 }
+.wrapAdminSec{
+    min-height: 800px;
+    min-width: 650px;
+    float: left;
+    width: 78%;
+    overflow-y: scroll;
+}
+.adminSec{
+    float: left;
+    width: 90%;
+    padding: 20px;
+
+}
+.footer{
+    border-top: 1px solid black;
+}
 .footer, .push{
+    float: left;
+    width: 100%;
     display: flex;
     height: 155px;
+    flex-flow: row-reverse;
+    
    .footer-p{
-       margin-top: 40px;
+        margin-right: 10%;
+       h2{
+           margin-top: 10px;
+           margin-bottom: 25px;
+       }
    }
    .sns-bar{
-       margin-left: 200px;
+       margin-right: 10%;
        padding: 15px;
         img{
            margin-top: 70px;

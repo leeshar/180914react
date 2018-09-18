@@ -6,6 +6,7 @@ import Section from './components/Section';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 import AdminNav from './components/AdminNav';
+import AdminSec from './components/AdminSec';
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
       <div className="App">
         <Header/>
         {url==='admin' ? <AdminNav/>:<Nav/>}
-        <Section/>
+        {url==='admin' ? <AdminSec/>:<Section/>}
         <Footer/>
       </div>
     );

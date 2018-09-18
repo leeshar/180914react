@@ -1,6 +1,7 @@
-import React,{Component, Fragment} from 'react';
+import React,{Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import Arrow from '../img/menu_arrow.png';
+import { SSL_OP_NO_TLSv1_1 } from 'constants';
 
 export default class AdminNav extends Component{
    constructor(){
@@ -47,6 +48,24 @@ export default class AdminNav extends Component{
                 <li>· 서비스이용중</li>
                 <li>· 구매확정</li>
                 <li>· 취소/환불</li>
+            </ul>
+            <li onClick={(e)=>this.handleChange(5)}>사이트관리<span><img src={Arrow}/></span></li>
+            <ul className="on" id="submenu05">
+               <li>· 메인배너</li>
+               <li>· 공지사항</li>
+               <li>· 관리자조회</li>
+               <li>· FAQ</li> 
+            </ul>
+            <li onClick={(e)=>this.handleChange(6)}>설정<span><img src={Arrow}/></span></li>
+            <ul className="on" id="submenu06">
+                <li>· 상품코드</li>
+                <li>· 주문코드</li>
+                <li>· 카테고리관리</li>
+            </ul>
+            <li onClick={(e)=>this.handleChange(7)}>통계<span><img src={Arrow}/></span></li>
+            <ul className="on" id="submenu07">
+                <li>· 컨텐츠공유</li>
+                <li>· 방문자수</li>
             </ul>
             </ul>
             </div>
