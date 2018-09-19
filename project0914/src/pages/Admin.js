@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import img01 from '../img/debit-card.png';
 import img02 from '../img/won.png';
 import img03 from '../img/graph03.png';
+import BarChart from '../components/Barchart';
 
 export default class Admin extends Component{
     render(){
@@ -72,7 +73,7 @@ export default class Admin extends Component{
                         </div>
                         </div>
                         <div className="sec_box02">
-                            <img src={img03}></img>
+                           <BarChart/>
                         </div>
                 </div>
                 <div className="admin_sec04">

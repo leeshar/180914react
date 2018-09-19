@@ -1,21 +1,45 @@
-*Component 분리
-	- Header
-	- Nav
+중요) * Component 분리
+	- Header <= 공통
+	- Nav <= page 마다
 	- Aside <= Design
-	- Section
-	- Footer
-*dependency
+	- Section  <= page 마다 Section 위치 레이아웃
+	- Footer <= 공통
+-dependency
+	- storybook <= UI 개발에 도움
+	- express <= server
+	- react-charts <= react차트
 	- React-DOM
-	- React-Router-DOM
-	- Redux
-	- Redux-form
-*Route
+	- React-Router-DOM <= 라우팅
+	- Redux <= 쓸까말까 고민중 react 16.3부터는 context 사용가능 하다고 해서
+	- Redux-form <= redux 포함
+-Route
 	- Header -> Route -> Section View
 	- Nav -> Route -> Section View
 	- “/“ -> Section View (HOME)
-*Folder Controll
-	- src /client
-	- src /pages
-	- src /components
-	- src /css
-	- src /img
+-Folder Controll
+	- src /client <= 프론트
+	- src /server <= 백
+	- src /client/pages
+	- src /client/components
+	- src /client/css    <= SASS 형식의 scss를 작성 에디터에서 css로 자동 compile
+		- StyledComponent <= 이것도 좋다고 함.(알아볼 것)
+	- src /client/img
+-Data
+	- data가 json형태의 배열로 들어오면 map <= 을 사용해서 view에 데이터 뿌려준다
+	- dataFlow -> One way 부모에서 자식으로 값을 전달. 자식에서 부모로는 전달불가
+
+-Proxy를 이용해서 server와 web pack-dev-server 연동가능
+
+-componentDidMount() 에서 aJax 요청
+	-componentDidMount() 이 API는 컴포넌트가 화면에 나타나게 됐을 때 호출.
+	-Data요청을 위해 axios, fetch 등을 통하여 aJax 요청을 함
+
+-componentWillReceiveProps(nextProps)
+	-이 API는 컴포넌트가 새로운 props를 받게됐을 때 호출.
+	-이 안에서는 state가 props에 따라 변해야 하는 로직을 작성.
+	-받게될 props는 nextProps로 조회 가능
+	-이 때 주의할점은 this.props를 조회하면 업데이트 전의 props값
+
+-LifeCycle 지식 필수 : https://velopert.com/3631 <= 참조
+
+-express와 react를 같이 사용할 땐 react가 라우팅 express가 해줘도 상관은 없으나 react로 통일 <= 이 방식으로 사용했을 땐 express에서는 값만 Rest형식으로 가져온다.
